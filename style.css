@@ -360,3 +360,62 @@ body{
 .testimonial-card h4{
     color:#06B6D4;
 }
+
+/* FAQ */
+
+.faq{
+    padding:80px 20px;
+    max-width:900px;
+    margin:auto;
+}
+
+.faq h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.faq-item{
+    background:#1E293B;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:25px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.faq-item:hover{
+    border-color:#06B6D4;
+    transform:translateY(-4px);
+}
+
+.faq-item h3{
+    color:#06B6D4;
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    color:#CBD5E1;
+    line-height:1.7;
+}
+
+.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    text-align:left;
+    cursor:pointer;
+    padding:10px 0;
+}
+
+.faq-answer{
+    display:none;
+    padding-top:10px;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
