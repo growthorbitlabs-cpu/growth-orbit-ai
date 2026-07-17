@@ -2,12 +2,20 @@ function toggleMenu() {
     document.getElementById("menu").classList.toggle("show");
 }
 
-const faqItems = document.querySelectorAll(".faq-item");
+document.addEventListener("DOMContentLoaded", function () {
 
-faqItems.forEach(item => {
-    const button = item.querySelector(".faq-question");
+    const faqItems = document.querySelectorAll(".faq-item");
 
-    button.addEventListener("click", () => {
-        item.classList.toggle("active");
+    faqItems.forEach(item => {
+
+        const button = item.querySelector(".faq-question");
+
+        if (button) {
+            button.addEventListener("click", function () {
+                item.classList.toggle("active");
+            });
+        }
+
     });
+
 });
