@@ -517,3 +517,45 @@ body{
     color:#CBD5E1;
     line-height:1.7;
 }
+
+/* Technology Stack */
+
+.tech-stack{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.tech-stack h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.tech-text{
+    max-width:700px;
+    margin:0 auto 50px;
+    color:#CBD5E1;
+}
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.tech-card{
+    background:#1E293B;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:25px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.tech-card:hover{
+    transform:translateY(-8px);
+    border-color:#06B6D4;
+    color:#06B6D4;
+}
